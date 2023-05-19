@@ -1,0 +1,22 @@
+Docker'da hot reload debug modda uygulamayı çalıştırmak için :
+
+docker run -dp 5005:5000 -w /app -v  "$(pwd):/app"(burası volume) ZiraAPI
+
+ilk defa mgration oluştururken
+flask db init
+
+migration için
+flask db migrate
+
+değişikliği göndermek için
+flask db upgrade
+
+
+
+echo "# StoreApiFLASK" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/tolgakaya/StoreApiFLASK.git
+git push -u origin main
